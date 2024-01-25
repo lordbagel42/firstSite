@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark py-3">
+          <div class="container px-5">
+              <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Raygen Rupe</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </main>
+
+    <div class="container mt-5">
+      <div class="row" >
+
+          <div class="col-sm-4 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Ninth Grade</h4>
+                <p class="card-text">I am a concurrently enrolled freshman at Centennial High School and at a school called TVMSC, a math and science center. Essentially, nerd school.</p>
+                <a href="https://tvmsc.boiseschools.org/" class="btn btn-primary">TVMSC Homepage</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/01-primary-blue-docker-logo.png" class="card-img-top">
+                <p class="card-text">Docker is what I use for hosting my websites and programs. 10/10 recommend.</p>
+                <a href="https://docker.com" class="btn btn-primary">Docker Official Homepage</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">SlimeVR</h4>
+                <p class="card-text">I am a SlimeVR Developer, responsible for writing an install script for Android and Termux. I spend a lot of time using, building, or developing this.</p>
+                <a href="https://slimevr.dev/" class="btn btn-primary">See SlimeVR</a>
+              </div>
+              <!-- Causes some issues with scaling. Disabled for now because I am too lazy to fix it.-->
+              <!-- <img class="card-img-bottom" src="img/SlimeVR_logo.png" alt="SlimeVR"> -->
+            </div>
+          </div>
+      </div>
+
+    </div>
+    <div class="container mt-3">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#docker">Docker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#slime">SlimeVR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#other">Other</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <div id="docker" class="container tab-pane active">
+        <h3>Docker</h3>
+        <p>Docker is a software used for containerization, a process where you keep apps in little sandboxes. This means they can't mess with each other, along with very simple installation.</p>
+        <p>I run a lot of apps in docker:</p>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td><b>Coder</b>  </td>
+              <td>
+                <p>Coder is a software for making "ephemeral workspaces", basically, it allows for me to develop inside the cloud instead of on a local machine. This makes anything I do always up to date, and easily recreatable and shareable.</p>
+                <p>I actually switched to developing this in coder soon after I finished this paragraph. It works a lot better.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Nginx Proxy Manager</b></td>
+              <td>
+                <p>Nginx is a software for reverse proxying. This means I can have multiple pieces of software go over the same port, and lead to different subdomains (the * part of *.example.com). It also allows <i>security.</i></p>
+              </td>
+            </tr>
+            <tr>
+              <td><b>Portainer</b></td>
+              <td>
+                <p>Portainer is a graphical interface for Docker. I wish I had not used it. It has many useful features, however, it also tends to cause some issues.</p>
+                <p>The largest issue with Portainer that I face is I cannot change any of the configuration files on my server unless I have my computer running, as that's where the Portainer dashboard is.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="slime" class="container tab-pane fade">
+        <h3>SlimeVR</h3>
+        <p>SlimeVR is an open source project. This means that all the code and design files are publicly available. Seriously, this is what one of the trackers PCB looks like:</p>
+        <img src="img/Tracker_PCB.png">
+      </div>
+      <div id="other" class="container tab-pane fade">
+        <h3>Other Things</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  </body>
+</html>
